@@ -1,3 +1,4 @@
+import 'package:dart_front/src/Components/colors/colors_base.dart';
 import 'package:dart_front/src/Components/compras_tile.dart';
 import 'package:dart_front/src/repository/constants/constantes.dart';
 import 'package:flutter/material.dart';
@@ -16,17 +17,20 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    final ColorBase colorBase = ColorBase();
+
     return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 14, 68, 112),
+        backgroundColor: colorBase.colorsBlue,
         drawer: const MyDrawer(),
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 14, 68, 112),
+          backgroundColor: colorBase.colorsBlue,
           elevation: 0,
         ),
         body: Column(
           children: [
             const SizedBox(
-              height: 150,
+              height: 100,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                     nameItem: "Bolacha Mabel",
                     valor: 5.39)
               ],
-            ))
+            )),
+            const SizedBox(height: 5),
+            
           ],
         ));
   }

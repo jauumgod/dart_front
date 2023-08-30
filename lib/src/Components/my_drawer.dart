@@ -12,7 +12,7 @@ class MyDrawer extends StatelessWidget {
           DrawerHeader(
             decoration: const BoxDecoration(
               color: Color.fromARGB(255,14,68,112)),
-              child: Text('Options', style: GoogleFonts.aboreto(
+              child: Text('Options', style: GoogleFonts.bebasNeue(
                 color: Colors.white,
                 fontSize: 22,
                 fontWeight: FontWeight.bold
@@ -21,25 +21,25 @@ class MyDrawer extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(onTap: (){},
-                child: Text('Todos os produtos', style: GoogleFonts.aboreto(fontSize: 14, fontWeight: FontWeight.bold)))),
+                child: Text('Todos os produtos', style: GoogleFonts.bebasNeue(fontSize: 14, fontWeight: FontWeight.bold)))),
 
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(onTap: (){},
-                child: Text('Media de preço', style: GoogleFonts.aboreto(fontSize: 14, fontWeight: FontWeight.bold)))),
+                child: Text('Media de preço', style: GoogleFonts.bebasNeue(fontSize: 14, fontWeight: FontWeight.bold)))),
               
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(onTap: (){},
-                child: Text('Supermercados', style: GoogleFonts.aboreto(fontSize: 14, fontWeight: FontWeight.bold)))),
+                child: Text('Supermercados', style: GoogleFonts.bebasNeue(fontSize: 14, fontWeight: FontWeight.bold)))),
             
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(onTap: (){},
-                child: Text('Ajuda', style: GoogleFonts.aboreto(fontSize: 14, fontWeight: FontWeight.bold)))),
+                child: Text('Ajuda', style: GoogleFonts.bebasNeue(fontSize: 14, fontWeight: FontWeight.bold)))),
         
         ],
       ),

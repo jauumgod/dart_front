@@ -39,7 +39,7 @@ class _InitialPageRouteState extends State<InitialPageRoute> {
           });
         },
         type: BottomNavigationBarType.fixed,
-        backgroundColor:const Color.fromARGB(255, 14, 68, 112),
+        backgroundColor: const Color.fromARGB(255, 9, 38, 62),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white.withAlpha(100),
         items: const [

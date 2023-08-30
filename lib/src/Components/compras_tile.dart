@@ -15,10 +15,11 @@ class ComprasTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25.0, bottom: 25),
+      padding: const EdgeInsets.only(left: 25, bottom: 40),
+      
       child: Container(
         padding: const EdgeInsets.all(12),
-        height: 100,
+        height: 150,
         width: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
