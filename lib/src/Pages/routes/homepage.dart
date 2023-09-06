@@ -1,5 +1,4 @@
 import 'package:dart_front/src/Components/colors/colors_base.dart';
-import 'package:dart_front/src/Components/compras_tile.dart';
 import 'package:dart_front/src/repository/constants/constantes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,7 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     final ColorBase colorBase = ColorBase();
 
     return Scaffold(
@@ -52,23 +50,32 @@ class _HomePageState extends State<HomePage> {
                     )),
               ],
             ),
-            const SizedBox(height: 20),
-            Expanded(
-                child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                ComprasTile(
-                    image: "lib/src/images/arroz.png",
-                    nameItem: "Arroz 5kg",
-                    valor: 21.95),
-                ComprasTile(
-                    image: "lib/src/images/bolacha_mabel.png",
-                    nameItem: "Bolacha Mabel",
-                    valor: 5.39)
-              ],
-            )),
-            const SizedBox(height: 5),
-            
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 150,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6), color: Colors.white),
+                child: Center(
+                    child: ListView(
+                  children: [
+                    //TODO: create row com nome - valor
+                    Center(child: Text("Ultimas Compras", style: GoogleFonts.bebasNeue(fontSize: 20, fontWeight: FontWeight.bold),),),
+                    const Divider(),
+                    const Text("primeira lista"),
+                    const Text("segunda lista"),
+                    const Text("quarta"),
+                    const Text("quinta"),
+                    const Text("sexta"),
+                    const Text("setima"),
+                    const Text("oitava"),
+                  ],
+                )),
+              ),
+            ),
           ],
         ));
   }
