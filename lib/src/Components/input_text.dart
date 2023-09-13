@@ -46,7 +46,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   Widget build(BuildContext context) {
-    FocusNode myFocusNode = new FocusNode();
+    FocusNode myFocusNode = FocusNode();
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: TextFormField(

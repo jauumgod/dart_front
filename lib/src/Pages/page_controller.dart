@@ -1,7 +1,8 @@
-import 'package:dart_front/src/Pages/routes/add_itempage.dart';
+
 import 'package:dart_front/src/Pages/routes/history_page.dart';
 import 'package:dart_front/src/Pages/routes/homepage.dart';
 import 'package:dart_front/src/Pages/routes/list_of_compras.dart';
+import 'package:dart_front/src/Pages/routes/title_list.dart';
 import 'package:flutter/material.dart';
 
 class InitialPageRoute extends StatefulWidget {
@@ -23,7 +24,7 @@ class _InitialPageRouteState extends State<InitialPageRoute> {
         controller: pageController,
         children: const [
           HomePage(),
-          AddProdutosPage(),
+         AddTitleListName(),
           ListOfCompras(),
           HistoryListPage(),
         ],

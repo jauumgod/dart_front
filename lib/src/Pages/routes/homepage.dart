@@ -53,29 +53,6 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(6), color: Colors.white),
-                child: Center(
-                    child: ListView(
-                  children: [
-                    //TODO: create row com nome - valor
-                    Center(child: Text("Ultimas Compras", style: GoogleFonts.bebasNeue(fontSize: 20, fontWeight: FontWeight.bold),),),
-                    const Divider(),
-                    const Text("primeira lista"),
-                    const Text("segunda lista"),
-                    const Text("quarta"),
-                    const Text("quinta"),
-                    const Text("sexta"),
-                    const Text("setima"),
-                    const Text("oitava"),
-                  ],
-                )),
-              ),
-            ),
           ],
         ));
   }
